@@ -1,0 +1,19 @@
+.admin-container {
+    width: auto;
+    height: 750px;
+    margin: 10px;
+    border: 1px solid #dadada;
+    background: #eeeeee;
+  }
+
+  .admin-left {
+    width: 345px;
+    border: 1px solid #dadada;
+    height: auto;
+  }
+  
+  .admin-right{
+    width: auto;
+    height: 100%;
+    border: 1px solid #dadada;
+  }

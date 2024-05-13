@@ -1,0 +1,57 @@
+  <font class="user-address-add-text" size="4">Kullanıcı Adresi Ekleme Paneli</font>
+
+  <mat-form-field class="user-address-countryId">
+    <mat-label>Ülke</mat-label>
+    <mat-select #countryId>
+      @for (country of countries; track country) {
+        <mat-option [value]="country.id">{{country.name}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field class="user-address-cityId">
+    <mat-label>Şehir</mat-label>
+    <mat-select #cityId>
+      @for (city of cities; track city) {
+        <mat-option [value]="city.cityId">{{city.cityName}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field class="user-address-districtId">
+    <mat-label>Semt</mat-label>
+    <mat-select #districtId>
+      @for (district of districts; track district) {
+        <mat-option [value]="district.id">{{district.districtName}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="user-address-neighbourhoodId">
+    <mat-label>Mahalle</mat-label>
+    <mat-select #neighbourhoodId>
+      @for (neighbouthood of neighbouthoods; track neighbouthood) {
+        <mat-option [value]="neighbouthood.id">{{neighbouthood.name}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="user-address-userId">
+    <mat-label>Kullanıcı Id</mat-label>
+    <input matInput #txtUserId>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="user-address-addressDetails">
+    <mat-label>Adres Tarifi</mat-label>
+    <input matInput #txtAddressDetails>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="user-address-postalCode">
+    <mat-label>Posta Kodu</mat-label>
+    <input matInput #txtPostalCode>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" class="user-address-add" (click)="create(txtUserId,countryId.value,cityId.value,districtId.value,neighbourhoodId.value,txtPostalCode,txtAddressDetails)">Kullanıcı Adresi Ekle</button> 
+  
+  
+  

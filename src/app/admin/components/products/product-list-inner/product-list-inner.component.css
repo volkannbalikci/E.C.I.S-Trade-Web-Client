@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+  }
+  .list-table{
+      width: auto;
+      height: auto;
+      margin: 10px;
+      border: 1px solid #dadada;
+      /* The background property is added to clearly distinguish the borders between drawer and main
+         content */
+      background: #eee;
+  }
+  
+  .paginator{
+    background-color: #eee;
+  }
+  
+  .product-right{
+    height: 350pt;
+  }
+  
+  .product-list-container {
+    width: auto;
+    height: auto;
+    margin: auto;
+    border: #555;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #eee;
+  }
+  
+  .product-add-container {
+    width: auto;
+    height: auto;
+    margin: 7px;
+    border: 1px solid #dadada;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #eee;
+  }
+  
+  .product-add-left{
+    width: 390px;
+    height: 400px;
+    background: #eee;
+  }

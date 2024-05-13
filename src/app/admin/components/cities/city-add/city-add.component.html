@@ -1,0 +1,21 @@
+  <font class="city-add-text" size="6">Şehir Ekleme Paneli</font>
+
+  <mat-form-field class="city-countryId">
+    <mat-label>Ülke</mat-label>
+    <mat-select #countryId>
+      @for (country of countries; track country) {
+        <mat-option [value]="country.id">{{country.name}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill" class="city-name">
+    <mat-label>Şehir Adı</mat-label>
+    <input matInput #txtCityName>
+  </mat-form-field>
+  
+  
+  <button mat-raised-button color="primary" class="city-add" (click)="create(countryId.value,txtCityName)">Şehir Ekle</button> 
+  
+  
+  

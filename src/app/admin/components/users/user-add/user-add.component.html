@@ -1,0 +1,13 @@
+<font class="user-add-text" size="5">Kullanıcı Ekleme Paneli</font>
+
+<mat-form-field appearance="fill" class="user-email">
+    <mat-label>E-Posta</mat-label>
+    <input matInput #txtEmail>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="user-password">
+    <mat-label>Şifre</mat-label>
+    <input matInput #txtPassword>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="user-add" (click)="create(txtEmail,txtPassword)">Kullanıcı Ekle</button>

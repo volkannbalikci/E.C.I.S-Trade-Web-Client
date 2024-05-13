@@ -1,0 +1,21 @@
+<font class="district-add-text" size="6">Semt Ekleme Paneli</font>
+
+<mat-form-field class="district-cityId">
+  <mat-label>Şehir</mat-label>
+  <mat-select #cityId>
+    @for (city of cities; track city) {
+      <mat-option [value]="city.cityId">{{city.cityName}}</mat-option>
+    }
+  </mat-select>
+  
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="district-name">
+  <mat-label>Semt Adı</mat-label>
+  <input matInput #txtDistrictName>
+</mat-form-field>
+
+
+<button mat-raised-button color="primary" class="district-add" (click)="create(cityId.value,txtDistrictName)">Semt Ekle</button> 
+
+

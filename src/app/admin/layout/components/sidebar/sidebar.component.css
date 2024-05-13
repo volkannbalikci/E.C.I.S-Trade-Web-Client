@@ -1,0 +1,260 @@
+.side-bar{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.addresses-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+.addresses-button:hover {background-color: #e6e6e6}
+
+.advert-photo-paths-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.advert-photo-paths-button:hover {background-color: #e6e6e6}
+
+.adverts-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.adverts-button:hover {background-color: #e6e6e6}
+
+.brands-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.brands-button:hover {background-color: #e6e6e6}
+
+.categories-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.categories-button:hover {background-color: #e6e6e6}
+
+.cities-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.cities-button:hover {background-color: #e6e6e6}
+
+.corporate-advert-order-items-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.corporate-advert-order-items-button:hover {background-color: #e6e6e6}
+
+.corporate-advert-orders-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.corporate-advert-orders-button:hover {background-color: #e6e6e6}
+
+.corporate-adverts-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.corporate-adverts-button:hover {background-color: #e6e6e6}
+
+.corporate-users-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.corporate-users-button:hover {background-color: #e6e6e6}
+
+.countries-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.countries-button:hover {background-color: #e6e6e6}
+
+.districts-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.districts-button:hover {background-color: #e6e6e6}
+
+.individual-adverts-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.individual-adverts-button:hover {background-color: #e6e6e6}
+
+.individual-users-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.individual-users-button:hover {background-color: #e6e6e6}
+
+.neighbourhoods-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.neighbourhoods-button:hover {background-color: #e6e6e6}
+
+.operation-claims-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.operation-claims-button:hover {background-color: #e6e6e6}
+
+.products-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.products-button:hover {background-color: #e6e6e6}
+
+.swap-adverts-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.swap-adverts-button:hover {background-color: #e6e6e6}
+
+.swap-for-category-adverts-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.swap-for-category-adverts-button:hover {background-color: #e6e6e6}
+
+.swap-for-product-adverts-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.swap-for-product-adverts-button:hover {background-color: #e6e6e6}
+
+.user-addresses-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.user-addresses-button:hover {background-color: #e6e6e6}
+
+.user-operation-claims-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.user-operation-claims-button:hover {background-color: #e6e6e6}
+
+.users-button{
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #eeeeee;
+}
+
+.users-button:hover {background-color: #e6e6e6}

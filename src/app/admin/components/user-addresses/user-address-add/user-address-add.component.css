@@ -1,0 +1,55 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+    .user-address-countryId{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 25%;
+    }
+
+    .user-address-cityId{
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+      .user-address-districtId{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .user-address-neighbourhoodId{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .user-address-userId{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .user-address-postalCode{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .user-address-addressDetails{
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+    .user-address-add{
+      margin-left: auto;
+      margin-right: auto;
+      font-family: monospace;
+    }
+    
+    .user-address-add-text{
+      position: absolute;
+      margin-left: 9%;
+      margin-right: auto;
+      margin-top: auto;
+      font-family: monospace;
+      top: 25px;
+    }

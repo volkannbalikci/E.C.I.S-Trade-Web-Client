@@ -1,0 +1,46 @@
+
+.list-table{
+  background-color: #eee;
+  height: auto;
+  width: 12pt;
+
+}
+
+.mat-elevation-z8{
+  height: auto;
+  width: auto;
+}
+
+.paginator{
+  background-color: #eee; 
+  width: auto;
+}
+
+.product-right{
+  width: auto;
+  height: auto;
+}
+
+.product-list-container {
+  width: auto;
+  height: auto;
+  border: #555;
+  /* The background property is added to clearly distinguish the borders between drawer and main
+     content */
+  background: #eee;
+}
+
+.product-add-container {
+  width: auto;
+  height: auto;
+  border: 1px solid #dadada;
+  /* The background property is added to clearly distinguish the borders between drawer and main
+     content */
+  background: #eee;
+}
+
+.product-add-left{
+  width: 220pt;
+  height: 300pt;
+  background: #eee;
+}

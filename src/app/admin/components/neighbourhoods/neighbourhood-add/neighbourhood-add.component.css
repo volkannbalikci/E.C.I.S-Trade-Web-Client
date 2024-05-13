@@ -1,0 +1,20 @@
+.neighbourhood-districtId{
+    margin-left: 20%;
+    margin-top: 25%;
+  }
+  .neighbourhood-name{
+      margin-left: 20%;
+    }
+
+
+  .neighbourhood-add{
+    margin-left: 30%;
+    font-family: monospace;
+  }
+  
+  .neighbourhood-add-text{
+    position: absolute;
+    margin-left: 10%;
+    font-family: monospace;
+    top: 35px;
+  }

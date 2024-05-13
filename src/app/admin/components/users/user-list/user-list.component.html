@@ -1,0 +1,53 @@
+<mat-drawer-container class="user-list-container">
+    <mat-drawer mode="side" opened></mat-drawer>
+    <mat-drawer-content>
+        <mat-drawer-container class="user-add-container">
+            <mat-drawer mode="side" opened class="user-add-left"><app-user-add (createdUser)="createdUser($event)"></app-user-add></mat-drawer>
+            <mat-drawer-content class="user-right"><ul>
+              
+              <div class="mat-elevation-z8" >
+                <table mat-table [dataSource] ="dataSource" class="list-table">
+              
+                  <ng-container matColumnDef="id">
+                    <th mat-header-cell *matHeaderCellDef > Kullanıcı İd </th>
+                    <td class="button" mat-cell *matCellDef="let element"> {{element.id}} </td>
+                  </ng-container>   
+            
+                  <ng-container matColumnDef="passwordHash">
+                    <th mat-header-cell *matHeaderCellDef> Şifre Hash </th>
+                    <td mat-cell *matCellDef="let element">{{element.passwordHash}} </td>
+                  </ng-container>
+            
+                  <ng-container matColumnDef="passwordSalt">
+                    <th mat-header-cell *matHeaderCellDef> Şifre Salt </th>
+                    <td mat-cell *matCellDef="let element"> {{element.passwordSalt}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="status">
+                    <th mat-header-cell *matHeaderCellDef> Kullanıcı Statü </th>
+                    <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="delete">
+                    <th mat-header-cell *matHeaderCellDef> </th>
+                    <td mat-cell *matCellDef="let element" appDelete [id]="element.id" (callback)="getUsers()" controller="Users"> <!--<img src="../../../../../assets/delete.png" width="20" height="20" (click)="delete(element.id, $event)"/>--> </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="edit">
+                    <th mat-header-cell *matHeaderCellDef> </th>
+                    <td mat-cell *matCellDef="let element"> <img src="../../../../../assets/edit.png" width="20" height="20"> </td>
+                  </ng-container>
+              
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+              
+                <mat-paginator (page)="pageChanged()" 
+                              class="paginator" [pageSizeOptions]="[5, 10, 20]"
+                               showFirstLastButtons
+                               aria-label="Select page of periodic elements"> 
+            </mat-paginator>
+        </div>  
+    </ul></mat-drawer-content>
+</mat-drawer-container>
+    

@@ -1,0 +1,48 @@
+
+.list-table{
+    background-color: #eee;
+    height: auto;
+    width: auto;
+  
+  }
+  
+  .mat-elevation-z8{
+    height: auto;
+    width: auto;
+  }
+  
+  .paginator{
+    background-color: #eee; 
+    height: auto;
+    width: auto;
+  }
+  
+  .address-right{
+    width: auto;
+    height: auto;
+  }
+  
+  .address-list-container {
+    width: auto;
+    height: auto;
+    border: #555;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #eee;
+  }
+  
+  .address-add-container {
+    width: auto;
+    height: auto;
+    border: 1px solid #dadada;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #eee;
+  }
+  
+  .address-add-left{
+    width: 290px;
+    height: auto;
+    background: #eee;
+  }
+  

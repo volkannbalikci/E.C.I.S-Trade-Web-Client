@@ -1,0 +1,20 @@
+.district-cityId{
+    margin-left: 20%;
+    margin-top: 25%;
+  }
+  .district-name{
+      margin-left: 20%;
+    }
+
+
+  .district-add{
+    margin-left: 30%;
+    font-family: monospace;
+  }
+  
+  .district-add-text{
+    position: absolute;
+    margin-left: 10%;
+    font-family: monospace;
+    top: 35px;
+  }

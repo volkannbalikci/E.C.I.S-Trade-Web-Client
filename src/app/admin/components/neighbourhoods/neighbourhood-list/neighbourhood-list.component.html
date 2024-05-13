@@ -1,0 +1,56 @@
+<mat-drawer-container class="neighbourhood-list-container">
+    <mat-drawer mode="side" opened></mat-drawer>
+    <mat-drawer-content>
+        <mat-drawer-container class="neighbourhood-add-container">
+            <mat-drawer mode="side" opened class="neighbourhood-add-left"><app-neighbourhood-add (createdNeighbourhood)="createdNeighbourhood($event)"></app-neighbourhood-add></mat-drawer>
+            <mat-drawer-content class="neighbourhood-add-right"><ul>
+              
+              <div class="mat-elevation-z8" >
+                <table mat-table [dataSource] ="dataSource" class="list-table">
+              
+                  <ng-container matColumnDef="id">
+                    <th mat-header-cell *matHeaderCellDef> Mahalle İd </th>
+                    <td mat-cell *matCellDef="let element">{{element.id}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="districtId">
+                    <th mat-header-cell *matHeaderCellDef > Semt İd </th>
+                    <td class="button" mat-cell *matCellDef="let element" > {{element.districtId}} </td>
+                  </ng-container> 
+            
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Mahalle Adı </th>
+                    <td mat-cell *matCellDef="let element">{{element.name}} </td>
+                  </ng-container>
+                  
+                  <ng-container matColumnDef="districtName">
+                    <th mat-header-cell *matHeaderCellDef > Semt Adı </th>
+                    <td class="button" mat-cell *matCellDef="let element" > {{element.districtName}} </td>
+                  </ng-container>   
+
+                  <ng-container matColumnDef="delete">
+                    <th mat-header-cell *matHeaderCellDef> </th>
+                    <td mat-cell *matCellDef="let element" appDelete [id]="element.id" (callback)="getNeighbourhoods()" controller="Neighbourhoods"> <!--<img src="../../../../../assets/delete.png" width="20" height="20" (click)="delete(element.id, $event)"/>--> </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="edit">
+                    <th mat-header-cell *matHeaderCellDef> </th>
+                    <td mat-cell *matCellDef="let element"> <img src="../../../../../assets/edit.png" width="20" height="20"> </td>
+                  </ng-container>
+              
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+              
+                <mat-paginator (page)="pageChanged()" 
+                              class="paginator" [pageSizeOptions]="[5, 10, 20]"
+                               showFirstLastButtons
+                               aria-label="Select page of periodic elements"> 
+                 </mat-paginator>
+                 </div>  
+            </ul></mat-drawer-content>
+        </mat-drawer-container>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+    

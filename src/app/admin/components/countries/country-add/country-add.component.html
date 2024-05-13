@@ -1,0 +1,13 @@
+<font class="country-add-text" size="5">Ülke Ekleme Paneli</font>
+
+<mat-form-field appearance="fill" class="country-name">
+    <mat-label>Ülke Adı</mat-label>
+    <input matInput #txtName>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="country-short-name">
+    <mat-label>Ülke Kısaltması</mat-label>
+    <input matInput #txtShortName>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="country-add" (click)="create(txtName,txtShortName)">Ülke Ekle</button>

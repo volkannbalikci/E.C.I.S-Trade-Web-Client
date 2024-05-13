@@ -1,0 +1,13 @@
+<font class="category-add-text" size="5">Kategori Ekleme Paneli</font>
+
+<mat-form-field appearance="fill" class="category-name">
+    <mat-label>Kategori Adı</mat-label>
+    <input matInput #txtName>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="category-description">
+    <mat-label>Kategori Açıklaması</mat-label>
+    <input matInput #txtDescription>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="category-add" (click)="create(txtName,txtDescription)">Kategori Ekle</button>

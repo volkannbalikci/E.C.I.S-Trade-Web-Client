@@ -1,0 +1,52 @@
+  <font class="address-add-text" size="6">Adres Ekleme Paneli</font>
+
+  <mat-form-field class="address-countryId">
+    <mat-label>Ülke</mat-label>
+    <mat-select #countryId>
+      @for (country of countries; track country) {
+        <mat-option [value]="country.id">{{country.name}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="address-cityId">
+    <mat-label>Şehir</mat-label>
+    <mat-select #cityId>
+      @for (city of cities; track city) {
+        <mat-option [value]="city.cityId">{{city.cityName}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="address-districtId">
+    <mat-label>Semt</mat-label>
+    <mat-select #districtId>
+      @for (district of districts; track district) {
+        <mat-option [value]="district.id">{{district.districtName}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="address-neighbourhoodId">
+    <mat-label>Mahalle</mat-label>
+    <mat-select #neighbourhoodId>
+      @for (neighbouthood of neighbouthoods; track neighbouthood) {
+        <mat-option [value]="neighbouthood.id">{{neighbouthood.name}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill" class="address-postalCode">
+    <mat-label>Posta Kodu</mat-label>
+    <input matInput #txtAddressPostalCode>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="address-addressDetails">
+    <mat-label>Adres Tarifi</mat-label>
+    <input matInput #txtAddressDetails>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" class="address-add" (click)="create(countryId.value, cityId.value, districtId.value, neighbourhoodId.value, txtAddressPostalCode, txtAddressDetails)">Adres Ekle</button> 
+  
+  
+  

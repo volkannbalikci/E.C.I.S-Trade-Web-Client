@@ -1,0 +1,9 @@
+<h2 mat-dialog-title class="attention">Uyarı
+  <mat-dialog-content class="text">
+    <p >Silmek İstediğinize Emin Misiniz?</p>
+  </mat-dialog-content>
+  <mat-dialog-actions class="action">
+    <button mat-button (click)="close()" class="cancel">İptal</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial class="accept">Onay</button>
+  </mat-dialog-actions>
+</h2>

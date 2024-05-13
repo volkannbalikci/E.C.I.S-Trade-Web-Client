@@ -1,0 +1,10 @@
+.individual-user-container {
+  width: 99%;
+  height: 700px;
+  margin: 10px;
+  border: 1px solid #fff700;
+  background: #eeeeee;
+}
+.individual-user-left{
+  width: 260px;
+}

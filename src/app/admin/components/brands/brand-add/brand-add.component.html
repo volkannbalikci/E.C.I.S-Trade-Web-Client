@@ -1,0 +1,13 @@
+<font class="brand-add-text" size="5">Marka Ekleme Paneli</font>
+
+<mat-form-field appearance="fill" class="brand-name">
+    <mat-label>Marka Adı</mat-label>
+    <input matInput #txtName>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="brand-description">
+    <mat-label>Marka Websitesi</mat-label>
+    <input matInput #txtWebsiteUrl>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="brand-add" (click)="create(txtName,txtWebsiteUrl)">Marka Ekle</button>

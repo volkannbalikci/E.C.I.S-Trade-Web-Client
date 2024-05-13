@@ -1,0 +1,48 @@
+<!-- <font class="product-add-text" size="5">Ürün Ekleme Paneli</font>
+
+<mat-form-field appearance="fill" class="product-branId">
+    <mat-label>Ürün Marka Id</mat-label>
+    <input matInput #txtBranId>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="product-categoryId">
+    <mat-label>Ürün Kategori İd</mat-label>
+    <input matInput #txtCategoryId>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="product-name">
+    <mat-label>Ürün Adı</mat-label>
+    <input matInput #txtProductName>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="product-add" (click)="create(txtBranId,txtCategoryId,txtProductName)">Ürün Ekle</button> -->
+
+<font class="product-add-text" size="6">Ürün Ekleme Paneli</font>
+
+<mat-form-field class="product-branId">
+  <mat-label>Marka</mat-label>
+  <mat-select #brandId>
+    @for (brand of brands; track brand) {
+      <mat-option [value]="brand.id">{{brand.name}}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field class="product-categoryId">
+  <mat-label>Kategori</mat-label>
+  <mat-select #categoryId>
+    @for (category of categories; track category) {
+      <mat-option [value]="category.id">{{category.name}}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="product-name">
+  <mat-label>Ürün Adı</mat-label>
+  <input matInput #txtProductName>
+</mat-form-field>
+
+
+<button mat-raised-button color="primary" class="product-add" (click)="create(brandId.value, categoryId.value, txtProductName)">Ürün Ekle</button> 
+
+

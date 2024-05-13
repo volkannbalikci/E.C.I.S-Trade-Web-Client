@@ -1,0 +1,21 @@
+<font class="neighbourhood-add-text" size="6">Mahalle Ekleme Paneli</font>
+
+<mat-form-field class="neighbourhood-districtId">
+  <mat-label>Semt</mat-label>
+  <mat-select #cityId>
+    @for (district of districts; track district) {
+      <mat-option [value]="district.id">{{district.districtName}}</mat-option>
+    }
+  </mat-select>
+  
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="neighbourhood-name">
+  <mat-label>Mahalle Adı</mat-label>
+  <input matInput #txtNeighbourhoodName>
+</mat-form-field>
+
+
+<button mat-raised-button color="primary" class="neighbourhood-add" (click)="create(cityId.value,txtNeighbourhoodName)">Mahalle Ekle</button> 
+
+

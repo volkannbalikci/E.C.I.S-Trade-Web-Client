@@ -1,0 +1,20 @@
+    .city-countryId{
+      margin-left: 20%;
+      margin-top: 25%;
+    }
+    .city-name{
+        margin-left: 20%;
+      }
+
+  
+    .city-add{
+      margin-left: 30%;
+      font-family: monospace;
+    }
+    
+    .city-add-text{
+      position: absolute;
+      margin-left: 10%;
+      font-family: monospace;
+      top: 35px;
+    }
